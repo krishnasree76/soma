@@ -189,11 +189,12 @@ const Navbar = () => {
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="fixed top-4 sm:top-6 md:top-8 left-1/2 -translate-x-1/2 z-50 w-[92%] sm:w-[90%] max-w-5xl"
+        className="fixed top-0 left-0 w-full z-50"
       >
         <div
           className={`
-            rounded-2xl px-4 sm:px-6 py-3 sm:py-4 
+            className="pt-20"
+            px-4 py-3 
             flex items-center justify-between
             backdrop-blur-xl border border-white/20
             transition-all duration-300
