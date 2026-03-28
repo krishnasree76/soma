@@ -13,7 +13,9 @@ const Index = () => {
     <div className="relative min-h-screen bg-glow grain overflow-x-hidden">
       <Navbar />
       <main className="max-w-[1600px] mx-auto">
-        <HeroSection />
+        <div className="pt-20">
+  <HeroSection />
+</div>
         <TrustSection />
         <AboutSection />
         <ApproachSection />

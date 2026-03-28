@@ -193,7 +193,7 @@ const Navbar = () => {
       >
         <div
           className={`
-            className="pt-20"
+
             px-4 py-3 
             flex items-center justify-between
             backdrop-blur-xl border border-white/20
