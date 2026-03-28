@@ -92,7 +92,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Menu, X } from "lucide-react";
-import logo from "@/assets/soma-roots-logo.png";
+import logo from "@/assets/image.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -210,11 +210,27 @@ const Navbar = () => {
             onClick={(e) => handleNavClick(e, "#home")}
             className="flex items-center gap-2 group"
           >
-            <img
-              src={logo}
-              alt="Soma Roots"
-              className="h-9 sm:h-10 w-auto transition-transform duration-300 group-hover:scale-105"
-            />
+            <motion.div
+  className="rounded-xl p-2"
+  animate={{
+    boxShadow: [
+      "0 0 0px rgba(184, 155, 122, 0.2)",
+      "0 0 20px rgba(184, 155, 122, 0.5)",
+      "0 0 0px rgba(184, 155, 122, 0.2)"
+    ]
+  }}
+  transition={{
+    duration: 2.5,
+    repeat: Infinity,
+    ease: "easeInOut"
+  }}
+>
+  <img
+    src={logo}
+    alt="Soma Roots"
+    className="h-10 sm:h-12"
+  />
+</motion.div>
           </a>
 
           {/* Desktop links */}
@@ -250,23 +266,24 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <a
-            href="[wa.me](https://wa.me/918977511813)"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-              hidden md:inline-flex items-center gap-2 
-              bg-gradient-to-r from-emerald-500 to-teal-500
-              hover:from-emerald-400 hover:to-teal-400
-              rounded-xl px-5 py-2.5 
-              text-sm font-semibold text-white
-              shadow-lg shadow-emerald-500/25
-              hover:shadow-emerald-500/40
-              hover:scale-[1.02] active:scale-[0.98]
-              transition-all duration-300
-            "
-          >
-            Book Now <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
-          </a>
+  href="https://wa.me/918977511813"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    hidden md:inline-flex items-center gap-2 
+    bg-gradient-to-r from-emerald-500 to-teal-500
+    hover:from-emerald-400 hover:to-teal-400
+    rounded-xl px-5 py-2.5 
+    text-sm font-semibold text-white
+    shadow-lg shadow-emerald-500/25
+    hover:shadow-emerald-500/40
+    hover:scale-[1.02] active:scale-[0.98]
+    transition-all duration-300
+  "
+>
+  Book Now 
+  <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+</a>
 
           {/* Mobile toggle */}
           <motion.button
@@ -356,21 +373,21 @@ const Navbar = () => {
                 className="mt-3 pt-3 border-t border-white/10"
               >
                 <a
-                  href="[wa.me](https://wa.me/918977511813)"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="
-                    flex items-center justify-center gap-2 
-                    bg-gradient-to-r from-emerald-500 to-teal-500
-                    rounded-xl px-5 py-3.5
-                    text-base font-semibold text-white
-                    shadow-lg shadow-emerald-500/25
-                    active:scale-[0.98]
-                    transition-all duration-200
-                  "
-                >
-                  Book Now <ArrowRight size={18} />
-                </a>
+  href="https://wa.me/918977511813"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    flex items-center justify-center gap-2 
+    bg-gradient-to-r from-emerald-500 to-teal-500
+    rounded-xl px-5 py-3.5
+    text-base font-semibold text-white
+    shadow-lg shadow-emerald-500/25
+    active:scale-[0.98]
+    transition-all duration-200
+  "
+>
+  Book Now <ArrowRight size={18} />
+</a>
               </motion.div>
             </motion.div>
           )}

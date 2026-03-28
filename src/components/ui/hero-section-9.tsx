@@ -159,6 +159,21 @@ const HeroSection = ({ title, subtitle, actions, stats, images, className }: Her
           >
             <img src={images[2]} alt="Collaborative discussion" className="h-full w-full rounded-xl object-cover" />
           </motion.div>
+          <motion.div
+  className="
+    absolute left-[35%] top-[45%]
+    h-28 w-28 rounded-2xl bg-muted p-2 shadow-lg
+    sm:h-40 sm:w-40
+  "
+  variants={floatingVariants}
+  animate="animate"
+  style={{ transitionDelay: '0.3s' }}
+>
+  <img
+    src={images[3]}
+    className="h-full w-full rounded-xl object-cover"
+  />
+</motion.div>
         </motion.div>
       </div>
     </section>

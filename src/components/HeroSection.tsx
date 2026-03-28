@@ -85,7 +85,7 @@
 // pages/home.tsx OR wherever
 import HeroSection from "@/components/ui/hero-section-9";
 import { Users, Briefcase, Link as LinkIcon } from "lucide-react";
-
+import logo from "@/assets/image.png";
 export default function Home() {
   return (
     <HeroSection
@@ -127,6 +127,7 @@ export default function Home() {
         "https://images.unsplash.com/photo-1490645935967-10de6ba17061",
         "https://images.unsplash.com/photo-1624969862293-b749659ccc4e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773",
+        logo,
         
       ]}
     />
