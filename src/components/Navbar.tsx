@@ -198,9 +198,9 @@ const Navbar = () => {
             backdrop-blur-xl border border-white/20
             transition-all duration-300
             ${scrolled 
-              ? "bg-white/15 shadow-lg shadow-black/5" 
-              : "bg-white/10"
-            }
+  ? "bg-white shadow-lg shadow-black/10" 
+  : "bg-white/90"
+}
           `}
         >
           {/* Logo */}
@@ -229,8 +229,8 @@ const Navbar = () => {
                     relative px-4 py-2 text-sm font-medium rounded-xl
                     transition-all duration-300
                     ${isActive 
-                      ? "text-foreground" 
-                      : "text-foreground/60 hover:text-foreground"
+                      ? "text-gray-900" 
+                      : "text-gray-500/60 hover:text-foreground"
                     }
                   `}
                 >
@@ -272,7 +272,7 @@ const Navbar = () => {
             onClick={() => setOpen(!open)}
             className="
               md:hidden p-2.5 rounded-xl
-              bg-white/10 hover:bg-white/20
+              bg-gray-100 hover:bg-gray-200
               text-foreground
               transition-colors duration-200
             "
@@ -316,7 +316,7 @@ const Navbar = () => {
               className="
                 mt-3 rounded-2xl p-2
                 backdrop-blur-xl bg-white/15 
-                border border-white/20
+                border border-gray-200
                 shadow-xl shadow-black/10
                 md:hidden
               "
