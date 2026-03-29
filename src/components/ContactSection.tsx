@@ -53,7 +53,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="font-semibold text-sm">Address</p>
-                <p className="text-sm text-muted-foreground">Miyapur, Hyderabad</p>
+                <p className="text-sm text-muted-foreground"> Supraja splendour, Matrusri nagar, Miyapur, Hyderabad- 500049</p>
               </div>
             </div>
 
