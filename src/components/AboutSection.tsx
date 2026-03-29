@@ -122,7 +122,7 @@ const AboutSection = () => {
               transition={{ delay: 0.4 }}
               className="glass-strong rounded-2xl p-5 absolute -bottom-6 -right-2 lg:right-[-40px] max-w-[220px]"
             >
-              <p className="text-sm font-semibold text-foreground">500+ clients</p>
+              <p className="text-sm font-semibold text-foreground">2700+ clients</p>
               <p className="text-xs text-muted-foreground mt-1">
                 helped reclaim their health naturally
               </p>

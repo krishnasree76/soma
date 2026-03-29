@@ -84,7 +84,7 @@ const ConsultationSection = () => {
             Transformation Starts Here
           </p>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-5 bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-            What to Expect from Your Consultation
+            What Awaits You In Your Session
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-12 leading-relaxed">
             We’ll explore your health story in depth — understanding your biology, habits, and goals
