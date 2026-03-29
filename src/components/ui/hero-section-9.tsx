@@ -161,8 +161,8 @@ const HeroSection = ({ title, subtitle, actions, stats, images, className }: Her
           </motion.div>
           <motion.div
   className="
-    absolute left-[15%] top-[35%]
-    h-28 w-28 rounded-2xl bg-muted p-2 shadow-lg
+    absolute left-[32%] top-[35%]
+    h-35 w-40 rounded-2xl bg-muted p-2 shadow-lg
     sm:h-40 sm:w-40
   "
   variants={floatingVariants}
